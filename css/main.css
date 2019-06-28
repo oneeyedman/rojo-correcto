@@ -1,0 +1,22 @@
+.page {
+  background: white;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* MAIN */
+.page__main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page__title {
+  margin: 0;
+  color: #cc121a;
+  font-size: 20px;
+  text-align: center;
+}
+.page__hex {}
+.page__color-name {}
