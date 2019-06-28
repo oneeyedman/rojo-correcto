@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+
 .page {
   background: white;
   margin: 0;
@@ -17,7 +22,16 @@
   color: #cc121a;
   font-size: 20px;
   text-align: center;
+  font-weight: 700;
+  font-style: oblique;
 }
+@media all and (min-width:768px) {
+  .page__title {
+    font-size: 51px;
+  }
+}
+
+
 
 
 /* FOOTER */
@@ -48,4 +62,32 @@
   align-items: center;
   color: white;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .page__footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 75px;
+  }
+  .page__logo {
+    transform: translate(0);
+  }
+}
+
+
+/* PRINT */
+@media print {
+  .page__logo {
+    background-color: white;
+    border: 1px solid black;
+    color:black;
+  }
+  .page__footer {
+    border-color: black;
+  }
+  .page__title {
+    color: black;
+  }
 }
